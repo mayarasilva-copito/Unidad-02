@@ -31,3 +31,19 @@ let titles = document.getElementsByTagName("H2");
 console.log(titles);
 console.log(titles[2].innerText);
 
+//Reto 4 "SELECCIONA POR SINTAXIS CSS - QUERY SELECTOR"
+
+let queryMainTitle = document.querySelector("#main-title");
+console.log(queryMainTitle);
+
+let queryMainTexts = document.querySelectorAll(".main-text");
+console.log(queryMainTexts);
+
+//Reto 5 "AGREGO UN EVENTO"
+
+console.log("EVENTOS");
+
+document.getElementById("clicker").addEventListener("click", function() {
+    console.log("HAZ HECHO CLIC EN EL BOTON");
+});
+
