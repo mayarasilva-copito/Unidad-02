@@ -1,0 +1,84 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Asegura que los inputs y textarea no se salgan del formulario */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.formulario {
+  background: #fff;
+  padding: 20px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: calc(100% - 4px); /* Evita que sobresalgan por el padding y el borde */
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Pseudo-clases */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  background: #f0f8ff;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #e63946;
+  background: #ffe6e6;
+}
+
+input:valid,
+textarea:valid {
+  border-color: #2a9d8f;
+  background: #e8f9f4;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
